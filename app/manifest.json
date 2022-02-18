@@ -1,0 +1,10 @@
+{
+  "name": "Muslim Diary",
+  "version": "0.0.1",
+  "description": "No",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "new-tab.html"
+  },
+  "manifest_version": 2
+}
