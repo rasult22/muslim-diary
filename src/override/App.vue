@@ -1,6 +1,7 @@
 <template>
   <div class="main-layout">
     123 123 {{ i }}
+    {{ change('123') }}
   </div>
 </template>
 
@@ -12,6 +13,11 @@ export default defineComponent ({
   data () {
     return {
       i: 0
+    }
+  },
+  methods: {
+    change (i: number) {
+      this.i = i
     }
   }
 })
