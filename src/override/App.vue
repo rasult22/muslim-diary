@@ -1,24 +1,35 @@
 <template>
   <div class="main-layout">
-    123 123 {{ i }}
+    <Header />
+    123 122sdas323 {{ i }}
     {{ change('123') }}
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Header from '@/components/Header.vue'
+
+let age: string | number = '30'
 
 export default defineComponent ({
   props: {},
+  components: {
+    Header
+  },
   data () {
     return {
-      i: 0
+      i: 0 as number | string 
     }
   },
   methods: {
-    change (i: number) {
+    change (i: number | string) {
       this.i = i
     }
+  },
+  created () {
+    // this.axios.get('https://api.unsplash.com/photos/random')  
+    // this.axios.get('https://api.unsplash.com/photos/:id')  
   }
 })
 </script>
