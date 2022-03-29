@@ -12,9 +12,10 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      input: {
-        manifest: 'src/manifest.json'
-      } 
+      input: 'src/manifest.json',
+      output: {
+        entryFileNames: `[name].css`,
+      }
     }
   },
   plugins: [vue(), chromeExtension()]

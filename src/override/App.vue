@@ -1,5 +1,5 @@
 <template>
-  <div class="main-layout">
+  <div class="main-layout" >
     <Header />
     123 122sdas323 {{ i }}
     {{ change('123') }}
@@ -38,5 +38,6 @@ export default defineComponent ({
 .main-layout {
   width: 100vw;
   height: 100vh;
+  background: url('https://images.unsplash.com/photo-1542451542907-6cf80ff362d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1521&q=80');
 }
 </style>

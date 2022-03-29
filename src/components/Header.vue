@@ -1,6 +1,14 @@
 <template>
   <div class="app-header">
-    app-header
+    <div class="app-header__left">
+      left
+    </div>
+    <div class="app-header__center">
+      center
+    </div>
+    <div class="app-header__right">
+      right
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -16,5 +24,15 @@ export default defineComponent ({
   width: 100%;
   height: 50px;
   background-color: $color-4;
+  display: flex;
+  &__left {
+    
+  }
+  &__center {
+
+  }
+  &__right {
+
+  }
 }
 </style>
